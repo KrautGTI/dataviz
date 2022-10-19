@@ -450,7 +450,7 @@ function compare(a, b) {
 // colors for male / female nodes 
 function color(g) {
     if (g == "male") {
-        return "steelblue";
+        return "#38d6ae";
     } else {
         return "#FF66CC";
     }
@@ -461,7 +461,7 @@ function linkColor(g) {
     if (g == "f-f") {
         return "#FF66FF";
     } else if (g == "m-m") {
-        return "steelblue";
+        return "#38d6ae";
     } else {
         return "#FFCC66";
     }
@@ -614,7 +614,7 @@ legendContainer.append("circle")
     .attr("cx", (lw + legendContainerMargin) / 2)
     .attr("cy", legendContainerMargin)
     .attr("r", 7)
-    .attr("fill", "steelblue");
+    .attr("fill", "#38d6ae");
 
 legendContainer.append("text")
     .attr("class", "mainlegendtext")
@@ -685,7 +685,7 @@ legendContainer.append("rect")
     .attr("y", legendContainerMargin + 75)
     .attr("width", 20)
     .attr("height", 2)
-    .attr("fill", "steelblue")
+    .attr("fill", "#38d6ae")
     .attr("opacity", "0.6");
 
 legendContainer.append("text")
