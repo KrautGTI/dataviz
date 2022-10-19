@@ -148,7 +148,7 @@ var formatNumber = d3.format(",d"),
 
 // start loading data and visualization here
 
-d3.csv("/data/refnetwork-nodes.csv", function (csv) {
+d3.csv("/dataviz/data/refnetwork-nodes.csv", function (csv) {
 
     nodesByIndex = csv.map(function (el) {
         el.binaryAttribute = +el.binaryAttribute;
@@ -196,7 +196,7 @@ d3.csv("/data/refnetwork-nodes.csv", function (csv) {
 
 
     // load edges within here
-    d3.csv('/data/refnetwork-edges.csv', function (csv) {
+    d3.csv('/dataviz/data/refnetwork-edges.csv', function (csv) {
         edges = [];
 
         // first convert the data to numeric: this returns array of 413 elements (corresponding to 
