@@ -452,14 +452,14 @@ function color(g) {
     if (g == "male") {
         return "#38d6ae";
     } else {
-        return "#FF66CC";
+        return "#611bff";
     }
 }
 
 // link colors
 function linkColor(g) {
     if (g == "f-f") {
-        return "#FF66FF";
+        return "#f82c91";
     } else if (g == "m-m") {
         return "#38d6ae";
     } else {
@@ -608,7 +608,7 @@ legendContainer.append("circle")
     .attr("cx", legendContainerMargin)
     .attr("cy", legendContainerMargin)
     .attr("r", 7)
-    .attr("fill", "#FF66CC");
+    .attr("fill", "#611bff");
 
 legendContainer.append("circle")
     .attr("cx", (lw + legendContainerMargin) / 2)
@@ -651,7 +651,7 @@ legendContainer.append("rect")
     .attr("y", legendContainerMargin + 75)
     .attr("width", 20)
     .attr("height", 2)
-    .attr("fill", "#FF66FF")
+    .attr("fill", "#f82c91")
     .attr("opacity", "0.6");
 
 legendContainer.append("text")
